@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fdellacorte\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj": {}
+    "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fdellacorte\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj": {
+    "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fdellacorte\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
+        "projectUniqueName": "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
         "projectName": "Alten Stationery",
-        "projectPath": "C:\\Users\\fdellacorte\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
-        "packagesPath": "C:\\Users\\fdellacorte\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fdellacorte\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\obj\\",
+        "projectPath": "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
+        "packagesPath": "C:\\Users\\afanelli\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\fdellacorte\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\afanelli\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +44,32 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -68,7 +89,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.206/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
