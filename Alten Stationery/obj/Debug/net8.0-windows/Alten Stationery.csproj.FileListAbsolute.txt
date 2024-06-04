@@ -1,0 +1,20 @@
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\bin\Debug\net8.0-windows\Alten Stationery.exe
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\bin\Debug\net8.0-windows\Alten Stationery.deps.json
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\bin\Debug\net8.0-windows\Alten Stationery.runtimeconfig.json
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\bin\Debug\net8.0-windows\Alten Stationery.dll
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\bin\Debug\net8.0-windows\Alten Stationery.pdb
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery_MarkupCompile.cache
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery_MarkupCompile.lref
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery.g.resources
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery.AssemblyInfoInputs.cache
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery.AssemblyInfo.cs
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery.csproj.CoreCompileInputs.cache
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery.dll
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\refint\Alten Stationery.dll
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery.pdb
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\Alten Stationery.genruntimeconfig.cache
+C:\Users\fdellacorte\source\repos\Alten Stationery\Alten Stationery\obj\Debug\net8.0-windows\ref\Alten Stationery.dll
