@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj": {}
+    "C:\\Users\\afanelli\\source\\repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj": {}
   },
   "projects": {
-    "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj": {
+    "C:\\Users\\afanelli\\source\\repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
+        "projectUniqueName": "C:\\Users\\afanelli\\source\\repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
         "projectName": "Alten Stationery",
-        "projectPath": "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
+        "projectPath": "C:\\Users\\afanelli\\source\\repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
         "packagesPath": "C:\\Users\\afanelli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\obj\\",
+        "outputPath": "C:\\Users\\afanelli\\source\\repos\\Alten-Stationery\\Alten Stationery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\afanelli\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -66,6 +66,18 @@
               "version": "[8.0.6, )"
             },
             "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
