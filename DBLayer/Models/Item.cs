@@ -28,6 +28,6 @@ namespace DBLayer.Models
         public DateTime? ExpireFEDate { get; set;}
 
 
-        public ICollection<Alert> Alerts { get; set; }
+        public IEnumerable<Alert> Alerts { get; set; }
     }
 }

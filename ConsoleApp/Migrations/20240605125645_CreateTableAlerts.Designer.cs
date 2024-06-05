@@ -4,6 +4,7 @@ using DBLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConsoleApp.Migrations
 {
     [DbContext(typeof(StationeryContext))]
-    partial class StationeryContextModelSnapshot : ModelSnapshot
+    [Migration("20240605125645_CreateTableAlerts")]
+    partial class CreateTableAlerts
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -45,14 +48,9 @@ namespace ConsoleApp.Migrations
                     b.Property<int>("ItemId")
                         .HasColumnType("int");
 
-                    b.Property<int>("RefillId")
-                        .HasColumnType("int");
-
                     b.HasKey("AlertId");
 
                     b.HasIndex("ItemId");
-
-                    b.HasIndex("RefillId");
 
                     b.ToTable("Alerts", (string)null);
                 });
@@ -100,25 +98,6 @@ namespace ConsoleApp.Migrations
                     b.ToTable("Items", (string)null);
                 });
 
-            modelBuilder.Entity("DBLayer.Models.Refill", b =>
-                {
-                    b.Property<int>("RefillId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RefillId"));
-
-                    b.Property<int>("Quantity")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("RefillDate")
-                        .HasColumnType("datetime");
-
-                    b.HasKey("RefillId");
-
-                    b.ToTable("Refill");
-                });
-
             modelBuilder.Entity("DBLayer.Models.Alert", b =>
                 {
                     b.HasOne("DBLayer.Models.Item", "Item")
@@ -127,23 +106,10 @@ namespace ConsoleApp.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("DBLayer.Models.Refill", "Refill")
-                        .WithMany("Alerts")
-                        .HasForeignKey("RefillId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Item");
-
-                    b.Navigation("Refill");
                 });
 
             modelBuilder.Entity("DBLayer.Models.Item", b =>
-                {
-                    b.Navigation("Alerts");
-                });
-
-            modelBuilder.Entity("DBLayer.Models.Refill", b =>
                 {
                     b.Navigation("Alerts");
                 });
