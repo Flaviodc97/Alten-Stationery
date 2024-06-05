@@ -23,7 +23,7 @@ namespace DBLayer
             //string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StationeryDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
             //Vittorio
-            string connString = "Data Source=localhost;Initial Catalog=StationeryDB;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False";
+            string connString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=StationeryDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False";
 
             optionsBuilder.UseSqlServer(connString);
             base.OnConfiguring(optionsBuilder);
@@ -36,6 +36,7 @@ namespace DBLayer
         {
             modelBuilder.Entity<Item>(i =>
             {
+                #region Items
                 i.HasKey(c => c.ItemId);
                 i.Property(c => c.Name).HasColumnType("nvarchar").HasMaxLength(50);
                 i.Property(c => c.Description).HasColumnType("nvarchar(max)");
@@ -48,7 +49,9 @@ namespace DBLayer
                 i.Property(c => c.ExpireFEDate).HasColumnType("datetime");
                 i.ToTable("Items");
             });
+            #endregion
 
+            #region Alerts
             modelBuilder.Entity<Alert>(i =>
             {
                 i.HasKey(c => c.AlertId);
@@ -57,14 +60,30 @@ namespace DBLayer
                 i.Property(c => c.EmailBody).HasColumnType("nvarchar(max)");
                 i.ToTable("Alerts");
             });
+            #endregion
 
-            #region Item
+            #region Items-Alerts
             modelBuilder.Entity<Item>()
             .HasMany(o => o.Alerts)
             .WithOne(oi => oi.Item)
             .HasForeignKey(oi => oi.ItemId);
             #endregion
 
+            #region Refills
+            modelBuilder.Entity<Refill>(r =>
+            {
+                r.HasKey(c=>c.RefillId);
+                r.Property(c => c.RefillDate).HasColumnType("datetime");
+                r.ToTable("Refills");
+            });
+            #endregion
+
+            #region Refills-Alerts
+            modelBuilder.Entity<Refill>()
+                .HasMany(a => a.Alerts)
+                .WithOne(r => r.Refill)
+                .HasForeignKey(c => c.RefillId);
+            #endregion
         }
 
 

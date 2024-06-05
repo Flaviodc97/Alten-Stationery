@@ -13,7 +13,8 @@ namespace DBLayer.Models
         public string Email { get; set; }
         public string EmailBody { get; set; }
 
-
+        public Refill Refill { get; set; }
+        public int RefillId { get; set; }
         public Item Item {  get; set; }
         public int ItemId { get; set; }
 
