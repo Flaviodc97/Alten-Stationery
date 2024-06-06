@@ -25,5 +25,7 @@ namespace DBLayer.Models
         public int Quantity { get; set; }
         public DateTime ExpirationDate { get; set; }
         public DateTime? ExpireFEDate { get; set;}
+
+        public int test {  get; set; }
     }
 }
