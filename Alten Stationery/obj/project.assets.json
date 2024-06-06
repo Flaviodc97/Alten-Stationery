@@ -4551,11 +4551,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
+      "projectUniqueName": "C:\\Users\\afanelli\\source\\repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
       "projectName": "Alten Stationery",
-      "projectPath": "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
+      "projectPath": "C:\\Users\\afanelli\\source\\repos\\Alten-Stationery\\Alten Stationery\\Alten Stationery.csproj",
       "packagesPath": "C:\\Users\\afanelli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\afanelli\\Source\\Repos\\Alten-Stationery\\Alten Stationery\\obj\\",
+      "outputPath": "C:\\Users\\afanelli\\source\\repos\\Alten-Stationery\\Alten Stationery\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\afanelli\\AppData\\Roaming\\NuGet\\NuGet.Config",

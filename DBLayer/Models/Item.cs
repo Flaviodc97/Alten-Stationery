@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,5 +28,9 @@ namespace DBLayer.Models
         public DateTime? ExpireFEDate { get; set;}
 
         public int test {  get; set; }
+
+
+        public IEnumerable<Alert> Alerts { get; set; }
+
     }
 }
